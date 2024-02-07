@@ -104,5 +104,13 @@ while player.生命 and 安傲氣.生命>0:
     time.sleep(2)
     #讓玩家使用動作
     玩家行動()
+    if 安傲氣.生命>0:
+      print("你贏了")
+
+    if 玩家.生命>0:
+      print("你輸了")
+    
+    if player.生命 and 安傲氣.生命<0:
+      print("你們都死了")
   #迴圈結束遊戲結束
 print("遊戲結束了！")
